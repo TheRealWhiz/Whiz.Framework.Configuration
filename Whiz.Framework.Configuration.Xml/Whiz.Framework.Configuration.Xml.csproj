@@ -28,8 +28,7 @@
     </None>
   </ItemGroup>
 
-
   <ItemGroup>
-    <ProjectReference Include="..\Whiz.Framework.Configuration\Whiz.Framework.Configuration.csproj" />
+    <PackageReference Include="Whiz.Framework.Configuration" Version="1.0.1" />
   </ItemGroup>
 </Project>
