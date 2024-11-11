@@ -14,7 +14,7 @@ namespace Whiz.Framework.Configuration.Xml
 	public static class Extensions
 	{
 		/// <summary>
-		/// Loads the MemoryConfiguration starting from 
+		/// Loads the MemoryConfiguration from the provided XElement
 		/// </summary>
 		/// <param name="config"></param>
 		/// <param name="xmlConfig"></param>

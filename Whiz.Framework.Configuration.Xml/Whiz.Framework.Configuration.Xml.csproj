@@ -2,25 +2,33 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461;net47;net471;net472;net48;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net461;net47;net471;net472;net48;net481;netstandard2.0;netstandard2.1</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company>Whiz</Company>
     <Authors>Gabriele Vaccaro</Authors>
     <Description>Whiz Framework Configuration class XML extensions</Description>
     <Copyright>Whiz</Copyright>
     <PackageTags></PackageTags>
-    <Version>1.0.1</Version>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net48|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net461|AnyCPU'">
-    <DocumentationFile>C:\Develop\Whiz\Configuration\Whiz.Framework.Configuration.Xml\Whiz.Framework.Configuration.Xml.xml</DocumentationFile>
+    <Version>1.0.2</Version>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageProjectUrl>https://github.com/TheRealWhiz/Whiz.Framework.Configuration/wiki</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Title>Whiz Configuration Xml Extensions</Title>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Whiz.Framework.Configuration\Whiz.Framework.Configuration.csproj" />
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Whiz.Framework.Configuration" Version="1.0.1" />
   </ItemGroup>
 </Project>
